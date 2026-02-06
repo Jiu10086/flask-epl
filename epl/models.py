@@ -23,7 +23,9 @@ class Player(db.Model):
     name: Mapped[str] = mapped_column(String(50), nullable=False , unique=True)
     position: Mapped[str] = mapped_column(String(20), nullable=False)
     nationality: Mapped[str] = mapped_column(String(25), nullable=False)
-    img: Mapped[int] = mapped_column(Integer, nullable=False)
+    goal: Mapped[int] = mapped_column(Integer, nullable=True, default=0)
+    squad_no: Mapped[int] = mapped_column(Integer, nullable=True)
+    img: Mapped[str] = mapped_column(String(256), nullable=False)
     club_id: Mapped[int] = mapped_column(Integer, ForeignKey('club.id'))
 
     club: Mapped['Club'] = relationship(back_populates='players')

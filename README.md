@@ -1,7 +1,7 @@
 # 📚 Chapter 06
 
-# 🗂️ Week 09
+# 🗂️ Week 11
 
-## 🚀 Flask & SQLAlchemy
+## 🚀 Flask & SQLAlchemy & Migration
 
-*บทนี้เรียนรู้การใช้งาน Flask กับ SQLAlchemy*
+*บทนี้เรียนรู้การใช้งาน Flask กับ SQLAlchemy กับ Migration*

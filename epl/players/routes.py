@@ -21,10 +21,11 @@ def new_player():
     img = request.form['img']
     goal = int(request.form.get('goal', 0))
     squad_no = request.form.get('squad_no')
+    clean_sheet = int(request.form.get('clean_sheet', 0)) if position == 'Goalkeeper' else 0
     club_id = int(request.form['club_id'])
     
     player = Player(name=name, position=position, nationality=nationality, 
-                    img=img, goal=goal, squad_no=squad_no, club_id=club_id)
+                    img=img, goal=goal, squad_no=squad_no, clean_sheet=clean_sheet, club_id=club_id)
     db.session.add(player)
     db.session.commit()
     
@@ -65,6 +66,7 @@ def update_player(id):
     img = request.form['img']
     goal = int(request.form.get('goal', 0))
     squad_no = request.form.get('squad_no')
+    clean_sheet = int(request.form.get('clean_sheet', 0)) if position == 'Goalkeeper' else 0
     club_id = int(request.form['club_id'])
 
     player.name = name
@@ -73,6 +75,7 @@ def update_player(id):
     player.img = img
     player.goal = goal
     player.squad_no = squad_no
+    player.clean_sheet = clean_sheet
     player.club_id = club_id
 
     db.session.add(player)

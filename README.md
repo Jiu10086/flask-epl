@@ -2,6 +2,6 @@
 
 # 🗂️ Week 11
 
-## 🚀 Flask & SQLAlchemy & Migration
+## 🚀 Flask & SQLAlchemy & Migration & Blueprint & MySQL Database
 
-*บทนี้เรียนรู้การใช้งาน Flask กับ SQLAlchemy กับ Migration*
+*บทนี้เรียนรู้การใช้งาน Flask กับ Blueprint & MySQL Database*

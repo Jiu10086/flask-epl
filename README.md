@@ -1,6 +1,6 @@
 # 📚 Chapter 06
 
-# 🗂️ Week 11
+# 🗂️ Week12
 
 ## 🚀 Flask & SQLAlchemy & Migration & Blueprint & MySQL Database
 
